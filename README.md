@@ -106,3 +106,222 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+# Introduction
+This project is for an e-commerce jewellery store called Obelisk Jewellery.
+It utilizes Django full stack frameworks. Frameworks enable fast development of 
+new projects.
+
+This project is the milestone 4 project for Code Institute's Full Stack Development Diploma
+# Reasons for site
+The jewellery store Obelisk has been set up to enable shoppers to purchase a range of jewellery
+## User stories
+
+A full list of user stories is provided in the pdf
+
+# Features
+Features across pages and features for individual pages are listed. A link to the wireframe is provided. The wireframe shows mock-ups of the main pages of the app including views on devices of different screen widths.
+## Features across all pages
+### Header
+The header contains the 
+* title
+* Navbar with My account, basket, my orders, home, product management (superusers only) and logout
+* Free delivery banner
+* Categories navbar with necklaces, bracelets, rings brooches, earrings, combos and sale
+* Search bar
+### Footer
+The footer contains the
+* Useful info Navbar with contact us, delivery options,, payment options, terms & conditions,
+returns & refunds and manufacture
+* Payment methods
+* Social media links
+* Copyright statement
+## Features on home page
+The home page contains an image of an attractive piece of jewellery
+## Features on product display page
+The product display page appears when a category/ subcategory is clicked or the search bar is used. Each product is displayed including image, title, description, rating and price.
+The products are displayed side by side on desktop but one below the other on mobile view. There is a display of number of products found at the top of the page.
+There is a dropdown menu also at the top of the page which allows shoppers to sort the products
+by rating, by cost or alphabetically by title.
+There is a button to take the shopper back to the top of the page
+## Features on product selected page
+The product selected page appears when a product is selected by clicking on it in the product display page.
+The product is displayed in a larger view and the view coontains the image, title, description,
+rating, price, size (rings only) and quantity selector.
+There are buttons at the bottom of the product information, one for 'keep shopping' and one for
+'Add to basket'
+## Features on basket page
+The basket page appears when 'Add to basket' is clicked on the 'product selected' page.
+The product is displayed in a larger view and the view coontains the image, title, description,
+quantity, price and size (rings only).
+There are buttons for 'sign in', 'checkout' and 'delete item'.
+Signing in/ creating an account is optional but it allows the shopper to track orders and save 
+card details for next time. There is a statement at the top of the page to inform shoppers of this.
+## Features on the login page
+
+## Features on the create account page
+## Features on checkout page
+## Features on payment page
+## Features on confirmation page
+Thank you for your order
+confirmation email
+order number
+order details
+* title of product
+* cost of product
+* size of product if applicable
+Delivering to :-
+* Full name
+* Address
+* County
+* Town or city
+* Postcode
+* Country
+* Phone number
+* Order total
+* Delivery cost
+* Grand total
+## Features on orders page
+## Features on contact page
+## Features on delivery page
+## Features on terms & conditions
+## Features on returns & refunds
+## Features on payment methods
+## Features on manufacture page
+## Features on product management page
+## Features on add product page
+## Features on edit product page
+# Data design
+## Product data
+All items will have a: -
+* Title
+* Description
+* Rating in terms of 1 to 5 stars
+* Price
+* Size if applicable (for rings only)
+
+All items will be assigned an SKU (Stock Keeping Unit) identifier, unique for each distinct product that can be purchased.
+
+The site will have the ability to search words in the title and description of each item
+for key words such as metal type, gem name, colours, shapes.
+
+The site will contain categories and subcategories. 
+Main categories include necklaces, bracelets, rings, brooches, earrings, combinations (matching necklace, earrings and ring) and sale items 
+The products for each category and 
+subcategory are loaded based on a search for key words in their titles. 'Gem' or 'Glass' 
+go in one subcategory, 'Silver', 'Gold', 'Titanium', 'Stainless Steel' go in the metallic 
+category.
+
+The site has CRUD ability (Create, Read, Update and Delete) because the operators of the 
+site need to be able to add, update and delete products on the site, plus everyone needs 
+to be able to read data on the site (shoppers as well as site operators)
+
+Django officially supports five database backends: PostgreSQL, MySQL, MariaDB, SQLite and Oracle.
+
+The type used in this project is PostGreSQL
+PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001.
+
+In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of databases, a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a transaction.
+
+PostgreSQL comes with many features aimed to help developers build applications, administrators to protect data integrity and build fault-tolerant environments, and help manage data no matter how big or small the dataset. In addition to being free and open source, PostgreSQL is highly extensible. Data types can be defined, custom functions built out, even code written from different programming languages without recompiling the database.
+
+## Site data
+
+### Returns & Refunds
+
+Thanks for purchasing our products at Obelisk Jewellery operated by Obelisk Ltd. In order to be eligible for a refund, you have to return the product within 30 calendar days of your purchase. The product must be in the same condition that you receive it and undamaged in any way. 
+
+After we receive your item, we will inspect it and process your refund. The money will be refunded to the original payment method you've used during the purchase. For credit card payments it may take 5 to 10 business days for a refund to show up on your credit card statement. 
+
+If the product is damaged in any way, or you have initiated the return after 30 calendar days have passed, you will not be eligible for a refund.
+
+If anything is unclear or you have more questions feel free to contact our customer support team.
+
+Sample Return and Refund Policy Template [Free Download]
+from [websitepolicies.com](https://www.websitepolicies.com/blog/sample-return-refund-policy-template)
+
+### Terms & Conditions
+#### What is a Terms and Conditions Agreement?
+
+A terms and conditions agreement outlines the website administrator’s rules regarding user behaviour, and provides information about the actions the website administrator can and will perform.
+Your terms and conditions text is a contract between your website and its users. In the event of a legal dispute, arbitrators will look to this agreement to determine whether each party acted within their rights.
+
+Terms and conditions are not required by law, but are extremely important to the long-term success and viability of your website. Terms and conditions give you control over your site and legal reinforcement if users try to take advantage of your operations.
+
+Creating the best terms and conditions page possible will protect your business from the following:
+Abusive users — Terms and conditions allow you to establish what constitutes appropriate activity on your site or app, so you can remove abusive users and content that violates your guidelines.
+Intellectual property theft — Asserting your claim to the creative assets of your site in your terms and conditions will prevent ownership disputes and copyright infringement.
+Potential litigation — If a user lodges a legal complaint against your business, showing that they were presented with clear terms and conditions before they used your site will help you immensely in court.
+
+In short, terms and conditions give you control over your site and legal reinforcement if users try to take advantage of your operations.
+
+A generic copy of some terms & conditions is taken from the website 'Termly'
+
+## Payment methods
+There are four payment methods: -
+* Paypal
+* Visa
+* Mastercard
+* American Express
+
+## Delivery options
+Free Standard Delivery over £??, otherwise standard delivery of £??
+This takes 5-7 working days
+Express Delivery £??
+Delivery next working day
+## Manufacture
+[Image](https://cdn.pixabay.com/photo/2018/03/31/12/23/hand-3278027_960_720.jpg
+)
+
+Our goods are hand crafted to the highest standard. We strive to create quality items for every budget. We use a large range of raw materials, particularly gems. This makes our jewellery pieces stand out from the crowd, they are so different from pieces bought from well-known, larger companies.
+
+We hope you enjoy your purchases from us!
+
+# Technologies used
+* [HTML](https://www.w3schools.com/html)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+* [JQUERY](https://jquery.com)
+* [Python](https://www.python.org)
+* [Bootstrap](https://getbootstrap.com)
+* [Django](https://www.djangoproject.com)
+
+# Deployment
+# Testing
+
+## Manual testing
+Across all pages, the nav bar shows a menu of Home, Create Account, Login.
+
+If user creates an account or logs in, the nav bar menu adjusts to show Home, Wildlife Surveys, People's Projects, Profile, Add own project, Logout.
+
+If user is an administrator, the menu shows Home, Wildlife Surveys, People's Projects, Profile, Add own project, Manage Categories, Contact Users and Logout.
+
+The footer links should open into pages, 'contact us', 'delivery', 'payment option', 'terms & conditions', 'returns & refunds' and 'Manufacture'.
+### Login
+### Create Account
+### Profile/ Orders page
+### Product Management
+#### Add Product
+#### Edit product
+#### Delete product
+### Logout
+### Responsiveness
+### Web browsers
+## Testing tools
+# Bugs
+# Credits
+## Media
+[IMG 2 GO](https://www.img2go.com) site was used to reduce file sizes of images for inclusion in the project.
+
+[Pixabay](https://pixabay.com) was used to obtain photos of jewellery
+
+Boutique Ado project Chris Z from [Code Institute](https://www.codeinstitute.net)
+
+[Stack overflow](https://stackoverflow.com)
+
+Termly terms and conditions website
+[Termly](termly.io/resources/templates/terms-and-conditions-template/)
+
+Hoverable dropdown menu from [W3Schools](https://www.w3schools.com)
+
+Scroll back to top button from [W3Schools](https://www.w3schools.com)
+
