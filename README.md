@@ -182,6 +182,9 @@ Delivering to :-
 * Delivery cost
 * Grand total
 ## Features on orders page
+Products purchased are displayed with image, title and arrival date.
+This page is visible only if the shopper signed in before purchasing the products
+The orders page can be accessed from the navbar.
 ## Features on contact page
 ## Features on delivery page
 ## Features on terms & conditions
