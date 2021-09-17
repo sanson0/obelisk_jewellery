@@ -19,14 +19,16 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-1">
                     <div class="card h-85 border-dark">
                         {% if product.image %}
-                        <div class="card-img-top d-flex justify-content-center"
-                            style="height: 100px; width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
-                            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <div class="card-img-top d-flex justify-content-center">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img src="{{ product.image.url }}" alt="{{ product.name }}" style="height: 100px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                            </a>
                         </div>
                         {% else %}
-                        <div class="card-img-top d-flex justify-content-center"
-                            style="height: 100px; width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        <div class="card-img-top d-flex justify-content-center">
+                            <a href="{% url 'product_detail' product.id %}" >
+                                <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" style="height: 100px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                            </a>
                         </div>
                         {% endif %}
                         <div class="card-body pb-0">
@@ -46,7 +48,7 @@
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                     {% if product.rating %}
-                                    <p>Rating {{ product.rating }}<i class="far fa-star"></i></p>
+                                    <p>Rating {{ product.rating }}<i class="far fa-star"></i> / 5</p>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
