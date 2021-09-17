@@ -2,19 +2,64 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ products }}
+<div class="container-fluid">
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-2"></div>
+            <div class="row">
+                {% for product in products %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-1">
+                    <div class="card h-85 border-dark">
+                        {% if product.image %}
+                        <div class="card-img-top d-flex justify-content-center"
+                            style="height: 100px; width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </div>
+                        {% else %}
+                        <div class="card-img-top d-flex justify-content-center"
+                            style="height: 100px; width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </div>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <div style="height: 80px;">
+                                <h5 class="mb-1">{{ product.name }}</h5>
+                            </div>
+                            <div style="height: 80px;">
+                                {% if product.description %}
+                                <p class="card-text">{{ product.description }}</p>
+                                {% else %}
+                                <small class="text-muted">No Description</small>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                    {% if product.rating %}
+                                    <p>Rating {{ product.rating }}<i class="far fa-star"></i></p>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                    <a href="#" class="btn btn-primary bg-warning text-dark border-dark">Add to basket
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
