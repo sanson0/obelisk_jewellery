@@ -155,7 +155,7 @@
         <!--Third navbar with a search bar to enable searches of products-->
         <nav class="navbar navbar-light bg-dark">
           <div class="container-fluid">
-            <form method="GET" action="" class="d-flex">
+            <form method="GET" action="{% url 'products' %}" class="d-flex">
               <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search text-light"></i></button>
             </form>
