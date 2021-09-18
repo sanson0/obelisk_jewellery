@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<h2 class="text-center text-md-left ml-3 pl-2 mt-5">Delivery Options</h2>
+<div class="border border-dark ml-3 mr-3 pl-2 pr-2 pt-2 mb-5">
+    <p class="text-center text-md-left">
+        Free Standard Delivery on orders over £{{ free_delivery_threshold }}
+    </p>
+    <p>
+        Otherwise standard delivery is £1.99 and takes 5-7 working days
+    </p>
+    <p class="text-center text-md-left">
+        Express Delivery is £3.99 and your purchases arrive the next working day
+    </p>
+</div>
+{% endblock %}
