@@ -19,3 +19,7 @@ def deliver(request):
 
 def payment(request):
     return render(request, 'home/payment.html')
+
+
+def ts_and_cs(request):
+    return render(request, 'home/ts_and_cs.html')
