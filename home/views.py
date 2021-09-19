@@ -23,3 +23,11 @@ def payment(request):
 
 def ts_and_cs(request):
     return render(request, 'home/ts_and_cs.html')
+
+
+def refund(request):
+    return render(request, 'home/refund.html')
+
+
+def manufacture(request):
+    return render(request, 'home/manufacture.html')
