@@ -141,9 +141,9 @@
                   <div class="dropdown">
                     <button class="dropbtn"><a class="nav-link bg-warning text-uppercase text-dark" href="{% url 'products' %}?category=necklaces,bracelets,rings,brooches,earrings,combinations">All <i class="fas fa-caret-down"></i></button></a>
                     <div class="dropdown-content">
-                      <a href="#">Sort by price</a>
-                      <a href="#">Sort by rating</a>
-                      <a href="#">Sort alphabetically</a>
+                      <a href="{% url 'products' %}?sort=price&direction=asc">Sort by price</a>
+                      <a href="{% url 'products' %}?sort=rating&direction=desc">Sort by rating</a>
+                      <a href="{% url 'products' %}?sort=category&direction=asc">Sort by category</a>
                       <a href="{% url 'products' %}?category=sale">Sale</a>
                       <a href="{% url 'products' %}">All products</a>
                     </div>
