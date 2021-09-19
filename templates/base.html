@@ -58,7 +58,7 @@
             <a class="navbar-brand text-uppercase" href="#">
               <i class="fas fa-user text-dark"> My Account</i>
             </a>
-            <a class="{% if grand_total %} font-weight-bold{% else %} text-dark{% endif %}" href="">
+            <a class="{% if grand_total %} font-weight-bold{% else %} text-dark{% endif %}" href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="text-dark fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
