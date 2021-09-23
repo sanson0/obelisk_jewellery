@@ -86,10 +86,6 @@ body {
   cursor: pointer;
 }
 
-.toast {
-  margin-top: 200px;
-
-}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {

@@ -172,20 +172,22 @@
   </header>
 
   {% if messages %}
-  <div class="message-container" style="position: fixed; z-index: 999; background-color: lightslategray; color: black;">
+  <div class="message-container">
+   
     {% for message in messages %}
     {% with message.level as level %}
     {% if level == 40 %}
-    Error{% include 'includes/toasts/toast_error.html' %}
+    Error {{ message }}
     {% elif level == 30 %}
-    Warning{% include 'includes/toasts/toast_warning.html' %}
+    Warning {{ message }}
     {% elif level == 25 %}
-    Success{% include 'includes/toasts/toast_success.html' %}
+    {% include 'includes/toasts/toast_success.html' %}
     {% else %}
-    Info{% include 'includes/toasts/toast_info.html' %}
+    Info {{ message }}
     {% endif %}
     {% endwith %}
     {% endfor %}
+    
   </div>
   {% endif %}
 
