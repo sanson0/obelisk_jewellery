@@ -2,6 +2,10 @@ body {
   font-family: "Lato";
 }
 
+.nav-categories {
+  background-color: aqua;
+}
+
 .pay-method {
     margin: 10px 10px 10px 10px;
   }

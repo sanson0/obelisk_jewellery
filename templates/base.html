@@ -108,9 +108,9 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class=" col bg-warning text-dark">
+      <div class="col text-dark" style="background-color: rgb(177, 260, 230);">
         <!--Second navbar containing categories of necklaces, bracelets, rings, brooches, earrings, combinations and sale-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav class="navbar navbar-expand-lg navbar-light ">
           <div class="container-fluid">
             <h6 class="navbar-brand text-uppercase nav-item">Categories</h6>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -145,7 +145,7 @@
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <button class="dropbtn"><a class="nav-link bg-warning text-uppercase text-dark pt-3"
+                    <button class="dropbtn"><a class="nav-link text-uppercase text-dark pt-3" style="background-color: rgb(177, 260, 230);"
                         href="{% url 'products' %}?category=necklaces,bracelets,rings,brooches,earrings,combinations"><h5>All <i class="fas fa-caret-down"></i></h5></button>
                         </a>
                     <div class="dropdown-content">
@@ -161,14 +161,18 @@
             </div>
         </nav>
         <!--Third navbar with a search bar to enable searches of products-->
-        <nav class="navbar navbar-light bg-dark">
-          <div class="container-fluid">
-            <form method="GET" action="{% url 'products' %}" class="d-flex">
-              <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search text-light"></i></button>
-            </form>
+        <div class="row">
+          <div class=" col bg-dark">
+            <nav class="navbar navbar-light bg-dark">
+              <div class="container-fluid">
+                <form method="GET" action="{% url 'products' %}" class="d-flex">
+                  <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search text-light"></i></button>
+                </form>
+              </div>
+            </nav>
           </div>
-        </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -200,15 +204,13 @@
   {% endblock %}
 
   <footer class="container">
-    <div class="row">
       <!--Statement-->
-      <div class="text-center col-md-6">
-        <h5>Jewellery for every budget</h5>
+      <div class="text-center mb-3">
+        <h4 class="font-italic">Jewellery for every budget</h4>
       </div>
-    </div>
     <!--Navbar for useful info such as contact details, delivery options, payment methods, Ts & Cs, returns & refunds, manufacture-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
-      <div class="container-fluid">
+      <div class="container-fluid"  style="background-color: rgb(163, 162, 162); color: black;">
         <h6 class="navbar-brand text-uppercase text-dark">Useful info</h6>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -276,7 +278,6 @@
         </ul>
       </div>
     </div>
-    <h5>Follow us on</h5>
     <!--Social media links-->
     <div class="row">
       {% load social_share %}
@@ -294,7 +295,7 @@
       </div>
     </div>
     <!--Copyright statement-->
-    <div>
+    <div class="mb-3">
       <i class="far fa-copyright"></i>
       2021 Obelisk Jewellery
     </div>
