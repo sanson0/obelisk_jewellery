@@ -112,7 +112,7 @@
         <!--Second navbar containing categories of necklaces, bracelets, rings, brooches, earrings, combinations and sale-->
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
           <div class="container-fluid">
-            <h6 class="navbar-brand text-uppercase">Categories</h6>
+            <h6 class="navbar-brand text-uppercase nav-item">Categories</h6>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -120,34 +120,34 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=necklaces">Necklaces</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=bracelets">Bracelets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=rings">Rings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=brooches">Brooches</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=earrings">Earrings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
                     href="{% url 'products' %}?category=combinations">Combinations</a>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <button class="dropbtn"><a class="nav-link bg-warning text-uppercase text-dark"
-                        href="{% url 'products' %}?category=necklaces,bracelets,rings,brooches,earrings,combinations">All
-                        <i class="fas fa-caret-down"></i></button></a>
+                    <button class="dropbtn"><a class="nav-link bg-warning text-uppercase text-dark pt-3"
+                        href="{% url 'products' %}?category=necklaces,bracelets,rings,brooches,earrings,combinations"><h5>All <i class="fas fa-caret-down"></i></h5></button>
+                        </a>
                     <div class="dropdown-content">
                       <a href="{% url 'products' %}?sort=price&direction=asc">Sort by price</a>
                       <a href="{% url 'products' %}?sort=rating&direction=desc">Sort by rating</a>
