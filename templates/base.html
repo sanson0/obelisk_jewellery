@@ -112,7 +112,7 @@
         <!--Second navbar containing categories of necklaces, bracelets, rings, brooches, earrings, combinations and sale-->
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
           <div class="container-fluid">
-            <h6 class="navbar-brand">Categories</h6>
+            <h6 class="navbar-brand text-uppercase">Categories</h6>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -279,11 +279,19 @@
     <h5>Follow us on</h5>
     <!--Social media links-->
     <div class="row">
-      <div class="col-2 d-flex justify-content-center social-media"><i class="fab fa-facebook-f"></i></div>
-      <div class="col-2 d-flex justify-content-center social-media"><i class="fab fa-twitter"></i></div>
-      <div class="col-2 d-flex justify-content-center social-media"><i class="fab fa-instagram"></i></div>
-      <div class="col-2 d-flex justify-content-center social-media"><i class="fab fa-youtube"></i></div>
-      <div class="col-2 d-flex justify-content-center social-media"><i class="fab fa-pinterest"></i></div>
+      {% load social_share %}
+      <div class="col-3 d-flex justify-content-center social-media">
+        {% post_to_facebook object_or_url "<p style='color: black;'>Facebook</p>" %}  
+      </div>
+      <div class="col-3 d-flex justify-content-center social-media">
+        {% post_to_twitter object_or_url%} 
+        </div>
+      <div class="col-3 d-flex justify-content-center social-media">
+        {% post_to_whatsapp object_or_url "<p style='color: black;'>Whatsapp</p>" %}
+      </div>
+      <div class="col-3 d-flex justify-content-center social-media">
+        {% post_to_telegram object_or_url %}
+      </div>
     </div>
     <!--Copyright statement-->
     <div>
