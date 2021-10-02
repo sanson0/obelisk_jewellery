@@ -55,8 +55,11 @@
         <!--First navbar containing links to my account, orders, home, product management and logout-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand text-uppercase" href="#">
+            <a class="navbar-brand text-uppercase" href="{% url 'account_login' %}">
               <i class="fas fa-user text-dark"> My Account</i>
+            </a>
+            <a class="navbar-brand text-uppercase" href="{% url 'account_signup' %}">
+              Register
             </a>
             <a class="{% if grand_total %} font-weight-bold{% else %} text-dark{% endif %}" href="{% url 'view_bag' %}">
               <div class="text-center">
@@ -83,7 +86,7 @@
                 </li>
                 {% if request.user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" aria-current="page" href="#">Orders</a>
+                  <a class="nav-link text-uppercase text-dark" aria-current="page" href="{% url 'profile' %}">Profile</a>
                 </li>
                 {% if request.user.is_superuser %}
                 <li class="nav-item">
@@ -91,7 +94,7 @@
                 </li>
                 {% endif %}
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" href="#" aria-current="page">Logout</a>
+                  <a class="nav-link text-uppercase text-dark" href="{% url 'account_logout' %}" aria-current="page">Logout</a>
                 </li>
                 {% endif %}
               </ul>
