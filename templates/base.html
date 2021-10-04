@@ -90,7 +90,7 @@
                 </li>
                 {% if request.user.is_superuser %}
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark" href="#" aria-current="page">Product Management</a>
+                  <a class="nav-link text-uppercase text-dark" href="{% url 'add_product' %}" aria-current="page">Product Management</a>
                 </li>
                 {% endif %}
                 <li class="nav-item">
