@@ -1,112 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome sanson0,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
-
 # Introduction
 This project is for an e-commerce jewellery store called Obelisk Jewellery.
 It utilizes Django full stack frameworks. Frameworks enable fast development of 
@@ -117,10 +8,10 @@ This project is the milestone 4 project for Code Institute's Full Stack Developm
 The jewellery store Obelisk has been set up to enable shoppers to purchase a range of jewellery
 ## User stories
 
-A full list of user stories is provided in the pdf
+A full list of [user stories](docs/user_stories_obelisk.pdf) is provided.
 
 # Features
-Features across pages and features for individual pages are listed. A link to the wireframe is provided. The wireframe shows mock-ups of the main pages of the app including views on devices of different screen widths.
+Features across pages and features for individual pages are listed. A link to the [wireframe](docs/obelisk_jewellery_wireframe.pdf) is provided. The wireframe shows mock-ups of the main pages of the app including views on devices of different screen widths.
 ## Features across all pages
 ### Header
 The header contains the 
@@ -130,7 +21,8 @@ The header contains the
 * Categories navbar with necklaces, bracelets, rings brooches, earrings, combos and sale
 * Search bar
 ### Footer
-The footer contains the
+The footer contains the:-
+* Statement 'Jewellery for every budget'
 * Useful info Navbar with contact us, delivery options,, payment options, terms & conditions,
 returns & refunds and manufacture
 * Payment methods
@@ -144,6 +36,7 @@ The products are displayed side by side on desktop but one below the other on mo
 There is a dropdown menu also at the top of the page which allows shoppers to sort the products
 by rating, by cost or alphabetically by title.
 There is a button to take the shopper back to the top of the page
+This allows the website visitor/ user to move back to the header quickly after scrolling through the products.
 ## Features on product selected page
 The product selected page appears when a product is selected by clicking on it in the product display page.
 The product is displayed in a larger view and the view coontains the image, title, description,
@@ -158,8 +51,21 @@ There are buttons for 'sign in', 'checkout' and 'delete item'.
 Signing in/ creating an account is optional but it allows the shopper to track orders and save 
 card details for next time. There is a statement at the top of the page to inform shoppers of this.
 ## Features on the login page
+This page contains a form with:-
+* fields for username and password
+* a checkbox allowing details to be saved ('Remember me')
+* a link back to the home page
+* a submit button entitled 'Sign In'
+* a link to reset the password entitled 'Forgot password?'
 
-## Features on the create account page
+## Features on the register account page
+This page contains a form with:-
+* fields for email and email again
+* a field for the username
+* fields for password and password again
+* a link back to the home page
+* a submit button entitled 'Sign In'
+* At the top, a message 'Already have an account? Then please sign in' and the link to sign in.
 ## Features on checkout page
 ## Features on payment page
 ## Features on confirmation page
@@ -186,14 +92,54 @@ Products purchased are displayed with image, title and arrival date.
 This page is visible only if the shopper signed in before purchasing the products
 The orders page can be accessed from the navbar.
 ## Features on contact page
+This page displays:-
+* Email address of the company
+* Registered address of the company
+* Company phone number
 ## Features on delivery page
-## Features on terms & conditions
-## Features on returns & refunds
+This page displays:-
+* Free delivery threshold amount
+* Information on standard delivery
+* An option of express delivery
 ## Features on payment methods
+This page displays all the payment options available.
+## Features on terms & conditions
+Terms and conditions are displayed as a block of text with date of latest update.
+## Features on returns & refunds
+A statement on returns and refunds is provided on this page. This is useful because it provides 
+a cut off point of 30 days so products have to be returned before the 30 days are up and must not
+be damaged in any way and it provides a timescale for refunding payments.
 ## Features on manufacture page
-## Features on product management page
-## Features on add product page
-## Features on edit product page
+This page provides customers with information on how the products are manufactured complete with image.
+## Features on size comparison page
+Ring sizes are given in different ways on jewellery sites. This page allows a comparison to be made
+with other systems of sizes.
+## Features on add product page for superusers
+This page contains a form with the following fields:-
+* Select category
+* SKU
+* Name
+* Description
+* Has sizes
+* Price
+* Rating
+* Image url
+* Select image
+The form has a submit button entitled 'Add Product' and a cancel button which returns
+the superuser to the products page.
+## Features on edit product page for superusers
+This page contains a pre-filled form with the following fields:-
+* Select category
+* SKU
+* Name
+* Description
+* Has sizes
+* Price
+* Rating
+* Image url
+* Select image with current image displayed and an option to remove the image
+The form has a submit button entitled 'Update Product' and a cancel button which returns
+the superuser to the products page.
 # Data design
 ## Product data
 All items will have a: -
@@ -268,9 +214,9 @@ There are four payment methods: -
 * American Express
 
 ## Delivery options
-Free Standard Delivery over £??, otherwise standard delivery of £??
+Free Standard Delivery over £50, otherwise standard delivery of 10%
 This takes 5-7 working days
-Express Delivery £??
+Express Delivery £6
 Delivery next working day
 ## Manufacture
 [Image](https://cdn.pixabay.com/photo/2018/03/31/12/23/hand-3278027_960_720.jpg
@@ -298,24 +244,128 @@ If user creates an account or logs in, the nav bar menu adjusts to show Home, Wi
 
 If user is an administrator, the menu shows Home, Wildlife Surveys, People's Projects, Profile, Add own project, Manage Categories, Contact Users and Logout.
 
-The footer links should open into pages, 'contact us', 'delivery', 'payment option', 'terms & conditions', 'returns & refunds' and 'Manufacture'.
+The footer links should open into pages, 'contact us', 'delivery', 'payment option', 'terms & conditions', 'returns & refunds', 'Manufacture' and 'Sizes'.
 ### Login
 ### Create Account
 ### Profile/ Orders page
-### Product Management
-#### Add Product
-#### Edit product
-#### Delete product
+### Add Product page
+#### Add Product (for superusers)
+#### Edit product (for superusers)
+#### Delete product (for superusers)
 ### Logout
+Clicking on the logout button should take the user to a screen where there is a message saying 
+'Are you sure you want to logout?' with the options to confirm or cancel the action.
 ### Responsiveness
 ### Web browsers
+The project should be tested on different web browsers eg. Chrome, Avast, Microsoft Bing, Firefox
 ## Testing tools
+Testing tools are listed:-
+* HTML code validator
+* CSS code validator
+* JShint
+* Lighthouse performance analysis (in Chrome browser)
 # Bugs
 # Credits
 ## Media
 [IMG 2 GO](https://www.img2go.com) site was used to reduce file sizes of images for inclusion in the project.
 
 [Pixabay](https://pixabay.com) was used to obtain photos of jewellery
+Individual photos used in the project database have their urls listed below.
+
+https://cdn.pixabay.com/photo/2017/07/08/18/38/decor-2485239__340.png
+https://cdn.pixabay.com/photo/2017/07/08/17/54/decor-2485081_960_720.png
+https://cdn.pixabay.com/photo/2017/07/08/18/54/decor-2485268_960_720.png
+https://cdn.pixabay.com/photo/2017/07/08/00/34/decor-2483241_960_720.png
+https://cdn.pixabay.com/photo/2017/03/09/20/28/flower-2130758_960_720.png
+https://cdn.pixabay.com/photo/2017/03/10/18/32/brooch-2133460_960_720.png
+https://cdn.pixabay.com/photo/2018/05/17/23/52/heart-3410020_960_720.png
+https://cdn.pixabay.com/photo/2017/03/09/20/31/brooch-2130764__480.png
+https://cdn.pixabay.com/photo/2017/07/03/16/24/insect-2468230_960_720.jpg
+https://cdn.pixabay.com/photo/2017/10/04/20/05/sowa-2817399__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/01/bloodstone-665716_960_720.jpg
+https://cdn.pixabay.com/photo/2014/11/16/12/17/pearls-533337_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/46/lapis-669522_960_720.jpg
+https://cdn.pixabay.com/photo/2017/01/12/16/35/necklace-1975105__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/01/necklace-665715_960_720.jpg
+https://cdn.pixabay.com/photo/2019/11/22/07/35/jewelry-4644297__340.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/45/lapis-669521_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/44/mystic-topaz-669519_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/04/red-665724__340.jpg
+https://cdn.pixabay.com/photo/2015/05/26/09/48/chain-784422__340.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/12/amber-669473__340.jpg
+https://cdn.pixabay.com/photo/2014/11/05/19/26/woman-518275_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/02/fluorite-665718_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/02/agate-665719_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/13/53/gemstone-665696_960_720.jpg
+https://cdn.pixabay.com/photo/2017/03/03/16/14/heart-2114333__340.png
+https://cdn.pixabay.com/photo/2015/03/09/14/12/amazonite-665747__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/09/59/bronzite-665310_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/40/rose-quartz-669513_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/42/apatite-669515_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/03/ankh-665720_960_720.jpg
+https://cdn.pixabay.com/photo/2015/08/26/19/25/pendant-908943__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/10/00/pink-665316__340.jpg
+https://cdn.pixabay.com/photo/2013/02/04/17/31/moonstone-77862_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/11/24/druzy-665486__340.jpg
+https://cdn.pixabay.com/photo/2016/04/12/16/44/bracelet-1324818_960_720.jpg
+https://cdn.pixabay.com/photo/2016/12/27/09/36/bracelet-1933601_960_720.jpg
+https://cdn.pixabay.com/photo/2017/03/05/01/41/jewelry-2117472_960_720.jpg
+https://cdn.pixabay.com/photo/2016/02/13/22/48/bracelet-1198737__340.jpg
+https://cdn.pixabay.com/photo/2016/02/13/22/52/bracelet-1198740_960_720.jpg
+https://cdn.pixabay.com/photo/2013/11/27/15/58/accessory-219346_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/10/01/solar-quartz-geode-665322_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/11/25/druzy-665487_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/15/moss-agate-gemstone-bracelet-665755_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/14/gemstone-bracelet-665753_960_720.jpg
+https://cdn.pixabay.com/photo/2018/04/21/22/53/heart-3339762_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/14/00/tigers-eye-665712_960_720.jpg
+https://cdn.pixabay.com/photo/2018/01/31/07/26/paper-3120474_960_720.jpg
+https://cdn.pixabay.com/photo/2021/02/04/20/27/bracelet-5982564_960_720.jpg
+https://cdn.pixabay.com/photo/2021/02/04/20/26/bracelet-5982558_960_720.jpg
+https://cdn.pixabay.com/photo/2020/04/04/20/43/bracelet-5003797__340.png
+https://cdn.pixabay.com/photo/2018/02/19/18/20/bracelet-3165768__340.jpg
+https://cdn.pixabay.com/photo/2015/08/06/18/42/stainless-878333__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/13/59/snowflake-obsidian-665711__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/10/15/glass-665379_960_720.jpg
+https://cdn.pixabay.com/photo/2015/07/20/15/11/earrings-852892_960_720.jpg
+https://cdn.pixabay.com/photo/2011/11/16/11/28/earrings-10332_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/12/01/27/aventurine-669488__340.jpg
+https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852901_960_720.jpg
+https://cdn.pixabay.com/photo/2017/07/08/21/20/decor-2485680_960_720.png
+https://cdn.pixabay.com/photo/2015/03/09/10/05/ammonite-665339_960_720.jpg
+https://cdn.pixabay.com/photo/2013/11/06/09/59/earrings-206363_960_720.jpg
+https://cdn.pixabay.com/photo/2019/02/07/20/36/ring-3982105_960_720.jpg
+https://cdn.pixabay.com/photo/2015/02/28/11/33/ring-653435_960_720.jpg
+https://cdn.pixabay.com/photo/2016/02/13/22/54/ring-1198744__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/09/37/rhodochrosite-665274__340.jpg
+https://cdn.pixabay.com/photo/2016/02/18/16/21/ring-1207474_960_720.jpg
+https://cdn.pixabay.com/photo/2016/02/13/22/42/ring-1198732_960_720.jpg
+https://cdn.pixabay.com/photo/2015/06/01/10/18/flowers-793119_960_720.jpg
+https://cdn.pixabay.com/photo/2017/06/13/02/22/ring-2397457_960_720.jpg
+https://cdn.pixabay.com/photo/2018/06/29/05/42/ring-3505305__340.png
+https://cdn.pixabay.com/photo/2015/03/09/13/49/chrysoprase-665688_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/09/36/chrysoprase-665271_960_720.jpg
+https://cdn.pixabay.com/photo/2015/03/09/09/35/rutilated-quartz-665262__340.jpg
+https://cdn.pixabay.com/photo/2018/05/14/14/40/ring-3400224_960_720.png
+https://cdn.pixabay.com/photo/2014/01/17/14/28/gem-246922_960_720.jpg
+https://cdn.pixabay.com/photo/2017/03/29/23/38/amethyst-2186842__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/11/36/drusy-665522__340.jpg
+https://cdn.pixabay.com/photo/2018/05/23/18/08/ring-with-ornament-3424669__340.png
+https://cdn.pixabay.com/photo/2015/09/02/10/46/jewelry-918247_960_720.jpg
+https://cdn.pixabay.com/photo/2015/08/09/09/35/jewelry-881324_960_720.jpg
+https://cdn.pixabay.com/photo/2017/05/28/18/11/fashion-2351694_960_720.jpg
+https://cdn.pixabay.com/photo/2017/06/03/22/26/fashion-jewelry-2369877_960_720.jpg
+https://cdn.pixabay.com/photo/2014/01/28/09/07/fused-glass-253622_960_720.jpg
+https://cdn.pixabay.com/photo/2014/01/28/09/11/fused-glass-253623__340.jpg
+https://cdn.pixabay.com/photo/2020/10/10/22/45/accessories-5644343_960_720.jpg
+https://cdn.pixabay.com/photo/2021/09/07/07/41/necklace-6603177_960_720.jpg
+https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852898_960_720.jpg
+https://cdn.pixabay.com/photo/2017/07/08/21/14/decor-2485655_960_720.png
+https://cdn.pixabay.com/photo/2015/03/09/10/11/mystic-665373__340.jpg
+https://cdn.pixabay.com/photo/2014/04/28/22/00/gems-334067__340.jpg
+https://cdn.pixabay.com/photo/2017/10/29/20/27/earrings-2900740__340.jpg
+https://cdn.pixabay.com/photo/2015/03/09/10/05/topaz-665340__340.jpg
+
 
 Boutique Ado project Chris Z from [Code Institute](https://www.codeinstitute.net)
 
@@ -328,3 +378,4 @@ Hoverable dropdown menu from [W3Schools](https://www.w3schools.com)
 
 Scroll back to top button from [W3Schools](https://www.w3schools.com)
 
+[Tutorials point](https://www.tutorialspoint.com/how-to-add-social-share-buttons-in-django) for Django social media share
