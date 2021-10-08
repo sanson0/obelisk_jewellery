@@ -31,3 +31,7 @@ def refund(request):
 
 def manufacture(request):
     return render(request, 'home/manufacture.html')
+
+
+def ring_sizes(request):
+    return render(request, 'home/ring_sizes.html')

@@ -26,6 +26,9 @@
   {% block extra_css %}
   {% endblock %}
 
+  {% block test_css %}
+  {% endblock %}
+
   {% block corejs %}
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -237,6 +240,7 @@
             <a class="nav-link text-uppercase text-dark" href="{% url 'ts_and_cs' %}">Terms & Conditions</a>
             <a class="nav-link text-uppercase text-dark" href="{% url 'refund' %}">Returns & Refunds</a>
             <a class="nav-link text-uppercase text-dark" href="{% url 'manufacture' %}">Manufacture</a>
+            <a class="nav-link text-uppercase text-dark" href="{% url 'ring_sizes' %}">Ring Sizes</a>
           </div>
         </div>
       </div>

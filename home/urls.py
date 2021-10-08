@@ -10,4 +10,5 @@ urlpatterns = [
     path('ts_and_cs', views.ts_and_cs, name='ts_and_cs'),
     path('refund', views.refund, name='refund'),
     path('manufacture', views.manufacture, name='manufacture'),
+    path('ring_sizes', views.ring_sizes, name='ring_sizes'),
 ]
