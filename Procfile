@@ -1,1 +1,1 @@
-web: gunicorn obelisk-jewellery.wsgi:application
+web: gunicorn obelisk_jewellery.wsgi:application
