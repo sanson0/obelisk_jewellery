@@ -67,7 +67,21 @@ This page contains a form with:-
 * a submit button entitled 'Sign In'
 * At the top, a message 'Already have an account? Then please sign in' and the link to sign in.
 ## Features on checkout page
-## Features on payment page
+Contains order summary table with item and subtotal headers
+Under item header, name of product, size if applicable, quantity
+Under subtotal header, there is the subtotal amount
+Contains order total, delivery charge and grand total
+Contains a form where the shopper can fill out details such as
+* Phone number
+* Address
+* Postcode
+* Country
+* Full name
+* Email address
+* Payment card number
+* Payment card expiry date
+* Payment card security code
+* Postcode registered with card
 ## Features on confirmation page
 Thank you for your order
 confirmation email
@@ -140,7 +154,7 @@ This page contains a pre-filled form with the following fields:-
 * Select image with current image displayed and an option to remove the image
 The form has a submit button entitled 'Update Product' and a cancel button which returns
 the superuser to the products page.
-# Data design
+# Data
 ## Product data
 All items will have a: -
 * Title
@@ -149,25 +163,33 @@ All items will have a: -
 * Price
 * Size if applicable (for rings only)
 
+The only items that need sizes are the rings. The category containing rings has sizes. The category containing sale items does not because most items in it will not have a size. Individual rings with their size in the description will be included in the sale. This applies to the bag content.
+
+| Field name | Data type |
+|------------|-----------|
+| Title | Short text |
+| Price (£) | Number |
+| Size (if applicable) | text |
+| Rating | Number 1-5 with decimal point |
+| Category | Short text |
+
 All items will be assigned an SKU (Stock Keeping Unit) identifier, unique for each distinct product that can be purchased.
 
 The site will have the ability to search words in the title and description of each item
 for key words such as metal type, gem name, colours, shapes.
 
-The site will contain categories and subcategories. 
+The site will contain categories of jewellery. 
 Main categories include necklaces, bracelets, rings, brooches, earrings, combinations (matching necklace, earrings and ring) and sale items 
-The products for each category and 
-subcategory are loaded based on a search for key words in their titles. 'Gem' or 'Glass' 
-go in one subcategory, 'Silver', 'Gold', 'Titanium', 'Stainless Steel' go in the metallic 
-category.
+The products are all sorted these categories (some will be added to the sale category)
 
-The site has CRUD ability (Create, Read, Update and Delete) because the operators of the 
+The site has CRUD ability (Create, Read, Update and Delete) because the superusers of the 
 site need to be able to add, update and delete products on the site, plus everyone needs 
-to be able to read data on the site (shoppers as well as site operators)
+to be able to read data on the site (shoppers as well as superusers).
 
+## Databases
 Django officially supports five database backends: PostgreSQL, MySQL, MariaDB, SQLite and Oracle.
 
-The type used in this project is PostGreSQL
+The type used in this project is PostGreSQL when deployed although, the database used during development is SQLite. Product data was transferred between the databases during the deployment process.
 PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001.
 
 In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of databases, a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a transaction.
@@ -235,6 +257,7 @@ We hope you enjoy your purchases from us!
 * [Django](https://www.djangoproject.com)
 
 # Deployment
+The deployment process for this project is set out in this [link](docs/Deployment.pdf)
 # Testing
 
 ## Manual testing
@@ -264,7 +287,13 @@ Testing tools are listed:-
 * CSS code validator
 * JShint
 * Lighthouse performance analysis (in Chrome browser)
-# Bugs
+# Bugs and improvements
+## Problem: - toasts not working
+Using different versions of bootstrap.min.js and bootstrap.min.css caused my toasts to stop working. The toasts did not show up but did move text/ images down the page.  
+The code can be viewed on this [link](docs/Bugs.pdf)
+## Improvement to image layout
+There is a difficulty with very different image sizes for items which could sometimes escape the confines of one product entry and bleed across into other product entries. This was solved by setting limits on the width of each image while restricting the height to the same value for all images. This is an easy problem to fix but makes a big difference to the appearance of the website and takes care of the difficulty of large variations in ratio of height and width of images.
+
 # Credits
 ## Media
 [IMG 2 GO](https://www.img2go.com) site was used to reduce file sizes of images for inclusion in the project.
@@ -379,3 +408,8 @@ Hoverable dropdown menu from [W3Schools](https://www.w3schools.com)
 Scroll back to top button from [W3Schools](https://www.w3schools.com)
 
 [Tutorials point](https://www.tutorialspoint.com/how-to-add-social-share-buttons-in-django) for Django social media share
+
+[Diff checker](https://www.diffchecker.com) is useful for debugging as it finds differences between chunks of code.
+
+Sample Return and Refund Policy Template [Free Download]
+from [websitepolicies.com](https://www.websitepolicies.com/blog/sample-return-refund-policy-template)
