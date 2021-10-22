@@ -259,32 +259,16 @@ We hope you enjoy your purchases from us!
 # Deployment
 The deployment process for this project is set out in this [link](docs/Deployment.pdf)
 # Testing
-
 ## Manual testing
-Across all pages, the nav bar shows a menu of Home, Create Account, Login.
-
-If user creates an account or logs in, the nav bar menu adjusts to show Home, Wildlife Surveys, People's Projects, Profile, Add own project, Logout.
-
-If user is an administrator, the menu shows Home, Wildlife Surveys, People's Projects, Profile, Add own project, Manage Categories, Contact Users and Logout.
-
-The footer links should open into pages, 'contact us', 'delivery', 'payment option', 'terms & conditions', 'returns & refunds', 'Manufacture' and 'Sizes'.
-### Login
-### Create Account
-### Profile/ Orders page
-### Add Product page
-#### Add Product (for superusers)
-#### Edit product (for superusers)
-#### Delete product (for superusers)
-### Logout
-Clicking on the logout button should take the user to a screen where there is a message saying 
-'Are you sure you want to logout?' with the options to confirm or cancel the action.
-### Responsiveness
-### Web browsers
+See [link](docs/Manual_testing.pdf) for explanation of manual testing.
+## Responsiveness
+See link for results of responsiveness testing.
+## Web browsers
 The project should be tested on different web browsers eg. Chrome, Avast, Microsoft Bing, Firefox
 ## Testing tools
 Testing tools are listed:-
 * HTML code validator
-* CSS code validator
+* CSS code validator, see [results](docs/CSS_Validation.pdf)
 * JShint
 * Lighthouse performance analysis (in Chrome browser)
 # Bugs and improvements
@@ -413,3 +397,7 @@ Scroll back to top button from [W3Schools](https://www.w3schools.com)
 
 Sample Return and Refund Policy Template [Free Download]
 from [websitepolicies.com](https://www.websitepolicies.com/blog/sample-return-refund-policy-template)
+
+[HTML Validator](https://validator.w3.org)
+
+[CSS Validator](https://jigsaw.w3.org/css-validator)
