@@ -57,7 +57,6 @@ This page contains a form with:-
 * a link back to the home page
 * a submit button entitled 'Sign In'
 * a link to reset the password entitled 'Forgot password?'
-
 ## Features on the register account page
 This page contains a form with:-
 * fields for email and email again
@@ -197,9 +196,7 @@ In computer science, ACID (atomicity, consistency, isolation, durability) is a s
 PostgreSQL comes with many features aimed to help developers build applications, administrators to protect data integrity and build fault-tolerant environments, and help manage data no matter how big or small the dataset. In addition to being free and open source, PostgreSQL is highly extensible. Data types can be defined, custom functions built out, even code written from different programming languages without recompiling the database.
 
 ## Site data
-
 ### Returns & Refunds
-
 Thanks for purchasing our products at Obelisk Jewellery operated by Obelisk Ltd. In order to be eligible for a refund, you have to return the product within 30 calendar days of your purchase. The product must be in the same condition that you receive it and undamaged in any way. 
 
 After we receive your item, we will inspect it and process your refund. The money will be refunded to the original payment method you've used during the purchase. For credit card payments it may take 5 to 10 business days for a refund to show up on your credit card statement. 
@@ -267,7 +264,7 @@ See link for results of responsiveness testing.
 The project should be tested on different web browsers eg. Chrome, Avast, Microsoft Bing, Firefox
 ## Testing tools
 Testing tools are listed:-
-* HTML code validator
+* HTML code validator, see [results](docs/HTML_Validation.pdf)
 * CSS code validator, see [results](docs/CSS_Validation.pdf)
 * JShint
 * Lighthouse performance analysis (in Chrome browser)
@@ -286,99 +283,190 @@ There is a difficulty with very different image sizes for items which could some
 Individual photos used in the project database have their urls listed below.
 
 https://cdn.pixabay.com/photo/2017/07/08/18/38/decor-2485239__340.png
-https://cdn.pixabay.com/photo/2017/07/08/17/54/decor-2485081_960_720.png
-https://cdn.pixabay.com/photo/2017/07/08/18/54/decor-2485268_960_720.png
-https://cdn.pixabay.com/photo/2017/07/08/00/34/decor-2483241_960_720.png
-https://cdn.pixabay.com/photo/2017/03/09/20/28/flower-2130758_960_720.png
-https://cdn.pixabay.com/photo/2017/03/10/18/32/brooch-2133460_960_720.png
-https://cdn.pixabay.com/photo/2018/05/17/23/52/heart-3410020_960_720.png
-https://cdn.pixabay.com/photo/2017/03/09/20/31/brooch-2130764__480.png
-https://cdn.pixabay.com/photo/2017/07/03/16/24/insect-2468230_960_720.jpg
-https://cdn.pixabay.com/photo/2017/10/04/20/05/sowa-2817399__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/01/bloodstone-665716_960_720.jpg
-https://cdn.pixabay.com/photo/2014/11/16/12/17/pearls-533337_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/46/lapis-669522_960_720.jpg
-https://cdn.pixabay.com/photo/2017/01/12/16/35/necklace-1975105__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/01/necklace-665715_960_720.jpg
-https://cdn.pixabay.com/photo/2019/11/22/07/35/jewelry-4644297__340.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/45/lapis-669521_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/44/mystic-topaz-669519_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/04/red-665724__340.jpg
-https://cdn.pixabay.com/photo/2015/05/26/09/48/chain-784422__340.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/12/amber-669473__340.jpg
-https://cdn.pixabay.com/photo/2014/11/05/19/26/woman-518275_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/02/fluorite-665718_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/02/agate-665719_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/13/53/gemstone-665696_960_720.jpg
-https://cdn.pixabay.com/photo/2017/03/03/16/14/heart-2114333__340.png
-https://cdn.pixabay.com/photo/2015/03/09/14/12/amazonite-665747__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/09/59/bronzite-665310_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/40/rose-quartz-669513_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/42/apatite-669515_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/03/ankh-665720_960_720.jpg
-https://cdn.pixabay.com/photo/2015/08/26/19/25/pendant-908943__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/10/00/pink-665316__340.jpg
-https://cdn.pixabay.com/photo/2013/02/04/17/31/moonstone-77862_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/11/24/druzy-665486__340.jpg
-https://cdn.pixabay.com/photo/2016/04/12/16/44/bracelet-1324818_960_720.jpg
-https://cdn.pixabay.com/photo/2016/12/27/09/36/bracelet-1933601_960_720.jpg
-https://cdn.pixabay.com/photo/2017/03/05/01/41/jewelry-2117472_960_720.jpg
-https://cdn.pixabay.com/photo/2016/02/13/22/48/bracelet-1198737__340.jpg
-https://cdn.pixabay.com/photo/2016/02/13/22/52/bracelet-1198740_960_720.jpg
-https://cdn.pixabay.com/photo/2013/11/27/15/58/accessory-219346_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/10/01/solar-quartz-geode-665322_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/11/25/druzy-665487_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/15/moss-agate-gemstone-bracelet-665755_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/14/gemstone-bracelet-665753_960_720.jpg
-https://cdn.pixabay.com/photo/2018/04/21/22/53/heart-3339762_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/14/00/tigers-eye-665712_960_720.jpg
-https://cdn.pixabay.com/photo/2018/01/31/07/26/paper-3120474_960_720.jpg
-https://cdn.pixabay.com/photo/2021/02/04/20/27/bracelet-5982564_960_720.jpg
-https://cdn.pixabay.com/photo/2021/02/04/20/26/bracelet-5982558_960_720.jpg
-https://cdn.pixabay.com/photo/2020/04/04/20/43/bracelet-5003797__340.png
-https://cdn.pixabay.com/photo/2018/02/19/18/20/bracelet-3165768__340.jpg
-https://cdn.pixabay.com/photo/2015/08/06/18/42/stainless-878333__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/13/59/snowflake-obsidian-665711__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/10/15/glass-665379_960_720.jpg
-https://cdn.pixabay.com/photo/2015/07/20/15/11/earrings-852892_960_720.jpg
-https://cdn.pixabay.com/photo/2011/11/16/11/28/earrings-10332_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/12/01/27/aventurine-669488__340.jpg
-https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852901_960_720.jpg
-https://cdn.pixabay.com/photo/2017/07/08/21/20/decor-2485680_960_720.png
-https://cdn.pixabay.com/photo/2015/03/09/10/05/ammonite-665339_960_720.jpg
-https://cdn.pixabay.com/photo/2013/11/06/09/59/earrings-206363_960_720.jpg
-https://cdn.pixabay.com/photo/2019/02/07/20/36/ring-3982105_960_720.jpg
-https://cdn.pixabay.com/photo/2015/02/28/11/33/ring-653435_960_720.jpg
-https://cdn.pixabay.com/photo/2016/02/13/22/54/ring-1198744__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/09/37/rhodochrosite-665274__340.jpg
-https://cdn.pixabay.com/photo/2016/02/18/16/21/ring-1207474_960_720.jpg
-https://cdn.pixabay.com/photo/2016/02/13/22/42/ring-1198732_960_720.jpg
-https://cdn.pixabay.com/photo/2015/06/01/10/18/flowers-793119_960_720.jpg
-https://cdn.pixabay.com/photo/2017/06/13/02/22/ring-2397457_960_720.jpg
-https://cdn.pixabay.com/photo/2018/06/29/05/42/ring-3505305__340.png
-https://cdn.pixabay.com/photo/2015/03/09/13/49/chrysoprase-665688_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/09/36/chrysoprase-665271_960_720.jpg
-https://cdn.pixabay.com/photo/2015/03/09/09/35/rutilated-quartz-665262__340.jpg
-https://cdn.pixabay.com/photo/2018/05/14/14/40/ring-3400224_960_720.png
-https://cdn.pixabay.com/photo/2014/01/17/14/28/gem-246922_960_720.jpg
-https://cdn.pixabay.com/photo/2017/03/29/23/38/amethyst-2186842__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/11/36/drusy-665522__340.jpg
-https://cdn.pixabay.com/photo/2018/05/23/18/08/ring-with-ornament-3424669__340.png
-https://cdn.pixabay.com/photo/2015/09/02/10/46/jewelry-918247_960_720.jpg
-https://cdn.pixabay.com/photo/2015/08/09/09/35/jewelry-881324_960_720.jpg
-https://cdn.pixabay.com/photo/2017/05/28/18/11/fashion-2351694_960_720.jpg
-https://cdn.pixabay.com/photo/2017/06/03/22/26/fashion-jewelry-2369877_960_720.jpg
-https://cdn.pixabay.com/photo/2014/01/28/09/07/fused-glass-253622_960_720.jpg
-https://cdn.pixabay.com/photo/2014/01/28/09/11/fused-glass-253623__340.jpg
-https://cdn.pixabay.com/photo/2020/10/10/22/45/accessories-5644343_960_720.jpg
-https://cdn.pixabay.com/photo/2021/09/07/07/41/necklace-6603177_960_720.jpg
-https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852898_960_720.jpg
-https://cdn.pixabay.com/photo/2017/07/08/21/14/decor-2485655_960_720.png
-https://cdn.pixabay.com/photo/2015/03/09/10/11/mystic-665373__340.jpg
-https://cdn.pixabay.com/photo/2014/04/28/22/00/gems-334067__340.jpg
-https://cdn.pixabay.com/photo/2017/10/29/20/27/earrings-2900740__340.jpg
-https://cdn.pixabay.com/photo/2015/03/09/10/05/topaz-665340__340.jpg
 
+https://cdn.pixabay.com/photo/2017/07/08/17/54/decor-2485081_960_720.png
+
+https://cdn.pixabay.com/photo/2017/07/08/18/54/decor-2485268_960_720.png
+
+https://cdn.pixabay.com/photo/2017/07/08/00/34/decor-2483241_960_720.png
+
+https://cdn.pixabay.com/photo/2017/03/09/20/28/flower-2130758_960_720.png
+
+https://cdn.pixabay.com/photo/2017/03/10/18/32/brooch-2133460_960_720.png
+
+https://cdn.pixabay.com/photo/2018/05/17/23/52/heart-3410020_960_720.png
+
+https://cdn.pixabay.com/photo/2017/03/09/20/31/brooch-2130764__480.png
+
+https://cdn.pixabay.com/photo/2017/07/03/16/24/insect-2468230_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/10/04/20/05/sowa-2817399__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/01/bloodstone-665716_960_720.jpg
+
+https://cdn.pixabay.com/photo/2014/11/16/12/17/pearls-533337_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/46/lapis-669522_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/01/12/16/35/necklace-1975105__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/01/necklace-665715_960_720.jpg
+
+https://cdn.pixabay.com/photo/2019/11/22/07/35/jewelry-4644297__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/45/lapis-669521_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/44/mystic-topaz-669519_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/04/red-665724__340.jpg
+
+https://cdn.pixabay.com/photo/2015/05/26/09/48/chain-784422__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/12/amber-669473__340.jpg
+
+https://cdn.pixabay.com/photo/2014/11/05/19/26/woman-518275_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/02/fluorite-665718_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/02/agate-665719_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/13/53/gemstone-665696_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/03/03/16/14/heart-2114333__340.png
+
+https://cdn.pixabay.com/photo/2015/03/09/14/12/amazonite-665747__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/09/59/bronzite-665310_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/40/rose-quartz-669513_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/42/apatite-669515_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/03/ankh-665720_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/08/26/19/25/pendant-908943__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/10/00/pink-665316__340.jpg
+
+https://cdn.pixabay.com/photo/2013/02/04/17/31/moonstone-77862_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/11/24/druzy-665486__340.jpg
+
+https://cdn.pixabay.com/photo/2016/04/12/16/44/bracelet-1324818_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/12/27/09/36/bracelet-1933601_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/03/05/01/41/jewelry-2117472_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/02/13/22/48/bracelet-1198737__340.jpg
+
+https://cdn.pixabay.com/photo/2016/02/13/22/52/bracelet-1198740_960_720.jpg
+
+https://cdn.pixabay.com/photo/2013/11/27/15/58/accessory-219346_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/10/01/solar-quartz-geode-665322_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/11/25/druzy-665487_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/15/moss-agate-gemstone-bracelet-665755_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/14/gemstone-bracelet-665753_960_720.jpg
+
+https://cdn.pixabay.com/photo/2018/04/21/22/53/heart-3339762_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/14/00/tigers-eye-665712_960_720.jpg
+
+https://cdn.pixabay.com/photo/2018/01/31/07/26/paper-3120474_960_720.jpg
+
+https://cdn.pixabay.com/photo/2021/02/04/20/27/bracelet-5982564_960_720.jpg
+
+https://cdn.pixabay.com/photo/2021/02/04/20/26/bracelet-5982558_960_720.jpg
+
+https://cdn.pixabay.com/photo/2020/04/04/20/43/bracelet-5003797__340.png
+
+https://cdn.pixabay.com/photo/2018/02/19/18/20/bracelet-3165768__340.jpg
+
+https://cdn.pixabay.com/photo/2015/08/06/18/42/stainless-878333__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/13/59/snowflake-obsidian-665711__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/10/15/glass-665379_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/07/20/15/11/earrings-852892_960_720.jpg
+
+https://cdn.pixabay.com/photo/2011/11/16/11/28/earrings-10332_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/12/01/27/aventurine-669488__340.jpg
+
+https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852901_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/07/08/21/20/decor-2485680_960_720.png
+
+https://cdn.pixabay.com/photo/2015/03/09/10/05/ammonite-665339_960_720.jpg
+
+https://cdn.pixabay.com/photo/2013/11/06/09/59/earrings-206363_960_720.jpg
+
+https://cdn.pixabay.com/photo/2019/02/07/20/36/ring-3982105_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/02/28/11/33/ring-653435_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/02/13/22/54/ring-1198744__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/09/37/rhodochrosite-665274__340.jpg
+
+https://cdn.pixabay.com/photo/2016/02/18/16/21/ring-1207474_960_720.jpg
+
+https://cdn.pixabay.com/photo/2016/02/13/22/42/ring-1198732_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/06/01/10/18/flowers-793119_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/06/13/02/22/ring-2397457_960_720.jpg
+
+https://cdn.pixabay.com/photo/2018/06/29/05/42/ring-3505305__340.png
+
+https://cdn.pixabay.com/photo/2015/03/09/13/49/chrysoprase-665688_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/09/36/chrysoprase-665271_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/09/35/rutilated-quartz-665262__340.jpg
+
+https://cdn.pixabay.com/photo/2018/05/14/14/40/ring-3400224_960_720.png
+
+https://cdn.pixabay.com/photo/2014/01/17/14/28/gem-246922_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/03/29/23/38/amethyst-2186842__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/11/36/drusy-665522__340.jpg
+
+https://cdn.pixabay.com/photo/2018/05/23/18/08/ring-with-ornament-3424669__340.png
+
+https://cdn.pixabay.com/photo/2015/09/02/10/46/jewelry-918247_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/08/09/09/35/jewelry-881324_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/05/28/18/11/fashion-2351694_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/06/03/22/26/fashion-jewelry-2369877_960_720.jpg
+
+https://cdn.pixabay.com/photo/2014/01/28/09/07/fused-glass-253622_960_720.jpg
+
+https://cdn.pixabay.com/photo/2014/01/28/09/11/fused-glass-253623__340.jpg
+
+https://cdn.pixabay.com/photo/2020/10/10/22/45/accessories-5644343_960_720.jpg
+
+https://cdn.pixabay.com/photo/2021/09/07/07/41/necklace-6603177_960_720.jpg
+
+https://cdn.pixabay.com/photo/2015/07/20/15/12/earrings-852898_960_720.jpg
+
+https://cdn.pixabay.com/photo/2017/07/08/21/14/decor-2485655_960_720.png
+
+https://cdn.pixabay.com/photo/2015/03/09/10/11/mystic-665373__340.jpg
+
+https://cdn.pixabay.com/photo/2014/04/28/22/00/gems-334067__340.jpg
+
+https://cdn.pixabay.com/photo/2017/10/29/20/27/earrings-2900740__340.jpg
+
+https://cdn.pixabay.com/photo/2015/03/09/10/05/topaz-665340__340.jpg
 
 Boutique Ado project Chris Z from [Code Institute](https://www.codeinstitute.net)
 
@@ -401,3 +489,5 @@ from [websitepolicies.com](https://www.websitepolicies.com/blog/sample-return-re
 [HTML Validator](https://validator.w3.org)
 
 [CSS Validator](https://jigsaw.w3.org/css-validator)
+
+Lighthouse performance checker in Chrome
