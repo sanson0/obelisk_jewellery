@@ -160,12 +160,8 @@
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <button class="dropbtn">
-                      <a class="nav-link text-uppercase text-dark pt-3"
-                        style="background-color: rgb(177, 260, 230);"
-                        href="{% url 'products' %}?category=necklaces,bracelets,rings,brooches,earrings,combinations">
-                        <h5>All <i class="fas fa-caret-down"></i></h5>
-                      </a>
+                    <button class="dropbtn" style="background-color: rgb(177, 260, 230);">
+                      <strong>All <i class="fas fa-caret-down"></i></strong>
                     </button>
                     <div class="dropdown-content">
                       <a href="{% url 'products' %}?sort=price&direction=asc">Sort by price</a>
