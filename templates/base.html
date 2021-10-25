@@ -79,36 +79,36 @@
         {% if request.user.is_authenticated %}
         {% else %}
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'account_login' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_login' %}">
             My Account
           </a>
         </div>
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'account_signup' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_signup' %}">
             Register
           </a>
         </div>
         {% endif %}
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'home' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'home' %}">
             Home
           </a>
         </div>
         {% if request.user.is_authenticated %}
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'profile' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'profile' %}">
             Profile
           </a>
         </div>
         {% if request.user.is_superuser %}
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'add_product' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'add_product' %}">
             Add product
           </a>
         </div>
         {% endif %}
         <div class="col-3 d-flex justify-content-center">
-          <a class="text-uppercase text-dark" href="{% url 'account_logout' %}">
+          <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_logout' %}">
             Logout
           </a>
         </div>
@@ -144,19 +144,28 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase text-dark" aria-current="page"
-                    href="{% url 'products' %}?category=rings">Rings</a>
+                    href="{% url 'products' %}?category=rings">Rings
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase text-dark" aria-current="page"
-                    href="{% url 'products' %}?category=brooches">Brooches</a>
+                    href="{% url 'products' %}?category=brooches">Brooches
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase text-dark" aria-current="page"
-                    href="{% url 'products' %}?category=earrings">Earrings</a>
+                    href="{% url 'products' %}?category=earrings">Earrings
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase text-dark" aria-current="page"
-                    href="{% url 'products' %}?category=combinations">Combinations</a>
+                    href="{% url 'products' %}?category=combinations">Combinations
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
+                    href="{% url 'products' %}?category=sale">Sale
+                  </a>
                 </li>
                 <li>
                   <a href="{% url 'products' %}" class="nav-link text-uppercase text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
