@@ -135,40 +135,40 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=necklaces">Necklaces</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=bracelets">Bracelets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=rings">Rings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=brooches">Brooches</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=earrings">Earrings</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase text-dark pt-3" aria-current="page"
+                  <a class="nav-link text-uppercase text-dark" aria-current="page"
                     href="{% url 'products' %}?category=combinations">Combinations</a>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <button class="dropbtn ml-4" style="background-color: rgb(177, 260, 230);">
-                      <h6>All <i class="fas fa-caret-down"></i></h6>
+                    <button class="dropbtn" style="background-color: rgb(177, 260, 230);">
+                      <h6  class="text-uppercase" style="padding-top: 5px;">All Products<i class="fas fa-caret-down"></i></h6>
                     </button>
                     <div class="dropdown-content">
                       <a href="{% url 'products' %}?sort=price&direction=asc">Sort by price</a>
                       <a href="{% url 'products' %}?sort=rating&direction=desc">Sort by rating</a>
                       <a href="{% url 'products' %}?sort=category&direction=asc">Sort by category</a>
                       <a href="{% url 'products' %}?category=sale">Sale</a>
-                      <a href="{% url 'products' %}">All products</a>
+                      <a href="{% url 'products' %}">All Products</a>
                     </div>
                   </div>
                 </li>
