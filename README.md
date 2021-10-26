@@ -7,8 +7,37 @@ This project is the milestone 4 project for Code Institute's Full Stack Developm
 # Reasons for site
 The jewellery store Obelisk has been set up to enable shoppers to purchase a range of jewellery
 ## User stories
+### Viewing and navigation
+| As a | I want to be able to | So that I can |
+|------------|-----------|-------------|
+| Shopper | View a list of products | Select some to purchase |
+| Shopper | View individual product details | Identify the price, description, product rating |
+| Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
+| Shopper | View items by category | Spend less time finding items that I want |
+| Shopper | Easily view the total purchases at any time | Avoid spending too much |
 
-A full list of [user stories](docs/user_stories_obelisk.pdf) is provided.
+### Registration and user accounts
+| As a | I want to be able to | So that I can |
+|------------|-----------|-------------|
+| Site User | Easily register for an account | Have a personal account and be able to view my profile |
+| Site User | Easily login or logout | Access my personal account information |
+| Site User | Easily recover my password in case I forget it | Recover access to my account |
+| Site User | Have a personalized user profile | View my personal order history and order confirmations, and save my payment information|
+
+### Sorting and searching
+| As a | I want to be able to | So that I can |
+|------------|-----------|-------------|
+| Shopper | Sort the list of available products | Easily identify the best rated, best priced and categorically sorted products |
+| Shopper | Sort a specific category of product | Find the best-priced or best-rated product in a specific category, or sort the products in that category by name |
+| Shopper | Sort multiple categories of products simultaneously | Find the best-priced or best-rated products across broad categories such as "Earrings" or "Rings"|
+| Shopper | Search for a product by name or description | Find a specific product I'd like to purchase |
+| Shopper | Easily see what I've searched for and the number of results | Quuickly decide whesther the roduct I want is available |
+
+### Purchasing and checkout
+| As a | I want to be able to | So that I can |
+|------------|-----------|-------------|
+| Shopper | Easily select the size/ quantity of a pproduct when purchasing | Ensure I don't accidentally select the wrong product, quantity or size |
+| Shopper | See what payment methods are valid | Check I have the right payment method |
 
 # Features
 Features across pages and features for individual pages are listed. A link to the [wireframe](docs/obelisk_jewellery_wireframe.pdf) is provided. The wireframe shows mock-ups of the main pages of the app including views on devices of different screen widths.
@@ -153,6 +182,8 @@ This page contains a pre-filled form with the following fields:-
 * Select image with current image displayed and an option to remove the image
 The form has a submit button entitled 'Update Product' and a cancel button which returns
 the superuser to the products page.
+## Future Features of the site
+* Provide a means of processing Paypal payments as this is a very popular method of payment.
 # Data
 ## Product data
 All items will have a: -
@@ -248,10 +279,12 @@ We hope you enjoy your purchases from us!
 # Technologies used
 * [HTML](https://www.w3schools.com/html)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+* [JavaScript](https://www.javascript.com)
 * [JQUERY](https://jquery.com)
 * [Python](https://www.python.org)
 * [Bootstrap](https://getbootstrap.com)
 * [Django](https://www.djangoproject.com)
+* [Stripe](https://dashboard.stripe.com/)
 
 # Deployment
 The deployment process for this project is set out in this [link](docs/Deployment.pdf)
@@ -270,8 +303,8 @@ Testing tools are listed:-
 * Lighthouse performance analysis (in Chrome browser)
 # Bugs and improvements
 ## Problem: - toasts not working
-Using different versions of bootstrap.min.js and bootstrap.min.css caused my toasts to stop working. The toasts did not show up but did move text/ images down the page.  
-The code can be viewed on this [link](docs/Bugs.pdf)
+It was difficult to get toasts working in this project. All the Bootstrap components are from Bootstrap 5.1 and it is important to keep all components and links consistent.
+The code can be viewed on this [link](docs/Toasts.pdf)
 ## Improvement to image layout
 There is a difficulty with very different image sizes for items which could sometimes escape the confines of one product entry and bleed across into other product entries. This was solved by setting limits on the width of each image while restricting the height to the same value for all images. This is an easy problem to fix but makes a big difference to the appearance of the website and takes care of the difficulty of large variations in ratio of height and width of images.
 
@@ -470,6 +503,7 @@ https://cdn.pixabay.com/photo/2015/03/09/10/05/topaz-665340__340.jpg
 
 Boutique Ado project Chris Z from [Code Institute](https://www.codeinstitute.net)
 
+Stack overflow provided code for the star rating for the products.
 [Stack overflow](https://stackoverflow.com)
 
 Termly terms and conditions website
