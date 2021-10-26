@@ -15,32 +15,8 @@
 
 {% block content %}
 <div class="container-fluid">
-<div class="row">
-    <div class="col-9"></div>
-        <div class="col-3 mt-3">
-    <div class="sort-select-wrapper w-25 float-right">
-        <select id="sort-selector"
-            class="custom-select custom-select-sm rounded-0 border border-dark border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
-            </option>
-            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
-                (low to high)</option>
-            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
-                (high to low)</option>
-            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
-                Rating (low to high)</option>
-            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
-                Rating (high to low)</option>
-            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
-                (A-Z)</option>
-            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
-                (Z-A)</option>
-        </select>
-    </div>
-</div>
-</div>
     <div class="row">
-        <div class="col-12 col-md-6 order-md-first">
+        <div class="col-3">
             <p class="text-muted mt-3 text-center text-md-left">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
                 <span class="small"><a href="{% url 'products' %}" class="text-dark">Products Home</a> | </span>
@@ -48,6 +24,28 @@
                 {{ products|length }} Products{% if search_term %} found for
                 <strong>"{{ search_term }}"</strong>{% endif %}
             </p>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3 mt-3">
+            <div class="sort-select-wrapper w-25">
+                <select id="sort-selector"
+                    class="custom-select custom-select-sm rounded-0 border border-dark border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                    <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                    </option>
+                    <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                        (low to high)</option>
+                    <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                        (high to low)</option>
+                    <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                        Rating (low to high)</option>
+                    <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
+                        Rating (high to low)</option>
+                    <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                        (A-Z)</option>
+                    <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                        (Z-A)</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -74,7 +72,7 @@
                         </div>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <div style="height: 80px;">
+                            <div style="height: 50px;">
                                 <h5 class="mb-1">{{ product.name }}</h5>
                             </div>
                             {% if product.category %}
@@ -84,7 +82,7 @@
                                 </a>
                             </p>
                             {% endif %}
-                            <div style="height: 80px;">
+                            <div style="height: 60px;">
                                 {% if product.description %}
                                 <p class="card-text">{{ product.description }}</p>
                                 {% else %}
@@ -97,7 +95,9 @@
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                     {% if product.rating %}
-                                    <p>Rating {{ product.rating }}<i class="far fa-star"></i> / 5</p>
+                                    <span class="stars checked" data-rating="{{ product.rating }}"
+                                        data-num-stars="5"></span>
+                                    <p>Rating {{ product.rating }}/ 5</p>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
@@ -154,5 +154,22 @@
             window.location.replace(currentUrl);
         }
     })
+</script>
+<script>
+    $.fn.stars = function () {
+        return $(this).each(function () {
+            const rating = $(this).data("rating");
+            const numStars = $(this).data("numStars");
+            const fullStar = '<i class="fas fa-star"></i>'.repeat(Math.floor(rating));
+            const halfStar = (rating % 1 !== 0) ? '<i class="fas fa-star-half-alt"></i>' : '';
+            const noStar = '<i class="far fa-star"></i>'.repeat(Math.floor(numStars - rating));
+            $(this).html(`${fullStar}${halfStar}${noStar}`);
+        });
+    }
+</script>
+<script>
+    $(function () {
+        $('.stars').stars();
+    });
 </script>
 {% endblock %}

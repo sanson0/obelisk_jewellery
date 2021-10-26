@@ -37,7 +37,8 @@
                   {% endif %}
                   <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                   {% if product.rating %}
-                  <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                  <span class="stars checked" data-rating="{{ product.rating }}" data-num-stars="5" ></span>
+                  <small class="text-muted">{{ product.rating }} / 5</small>
                   {% else %}
                   <small class="text-muted">No Rating</small>
                   {% endif %}
@@ -112,5 +113,22 @@
 
   {% block postloadjs %}
   {{ block.super }}
+  <script>
+    $.fn.stars = function () {
+        return $(this).each(function () {
+            const rating = $(this).data("rating");
+            const numStars = $(this).data("numStars");
+            const fullStar = '<i class="fas fa-star"></i>'.repeat(Math.floor(rating));
+            const halfStar = (rating % 1 !== 0) ? '<i class="fas fa-star-half-alt"></i>' : '';
+            const noStar = '<i class="far fa-star"></i>'.repeat(Math.floor(numStars - rating));
+            $(this).html(`${fullStar}${halfStar}${noStar}`);
+        });
+    }
+</script>
+<script>
+    $(function () {
+        $('.stars').stars();
+    });
+</script>
   {% include 'products/includes/quantity_input_script.html' %}
   {% endblock %}
