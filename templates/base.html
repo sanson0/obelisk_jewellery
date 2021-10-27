@@ -4,10 +4,10 @@
 <html lang="en">
 
 <head>
-
   {% block meta %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Jewellery e-commerce store">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {% endblock %}
 
@@ -47,10 +47,9 @@
 
   <title>Obelisk Jewellery {% block extra_title %}{% endblock %}</title>
 </head>
-
 <body>
   <header class="container-fluid">
-    <div class="bg-light">
+    <div>
       <div class="text-dark row pt-3">
         <div class="col-4">
           <!--Site title-->
@@ -58,12 +57,15 @@
               Jewellery</strong>
           </h2>
         </div>
+        <!--Product search bar-->
         <div class="col-6 col-md-4">
           <form method="GET" action="{% url 'products' %}" class="d-flex">
-            <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2 border border-dark" type="text" name="q" placeholder="Search"
+              aria-label="Search">
             <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search text-dark"></i></button>
           </form>
         </div>
+        <!--Shopping bag-->
         <div class="col-2 col-md-4">
           <div class="d-flex justify-content-center">
             <a class="{% if grand_total %} font-weight-bold{% else %} text-dark{% endif %}" href="{% url 'view_bag' %}">
@@ -86,35 +88,41 @@
         <div class="col col-sm-4"></div>
         {% if request.user.is_authenticated %}
         {% else %}
+        <!--Login link for all site users-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_login' %}">
             My Account
           </a>
         </div>
+        <!--Register link for all site users-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_signup' %}">
             Register
           </a>
         </div>
         {% endif %}
+        <!--Home link for all site users-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'home' %}">
             Home
           </a>
         </div>
         {% if request.user.is_authenticated %}
+        <!--Profile link for logged in site users-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'profile' %}">
             Profile
           </a>
         </div>
         {% if request.user.is_superuser %}
+        <!--Add product link for superusers only-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'add_product' %}">
             Add product
           </a>
         </div>
         {% endif %}
+        <!--Logout link for site users-->
         <div class="col-sm-2 d-flex justify-content-center pb-3">
           <a class="text-uppercase text-dark text-decoration-none" href="{% url 'account_logout' %}">
             Logout
@@ -132,7 +140,7 @@
     </div>
     <div class="row text-center">
       <div class="col text-dark border border-dark" style="background-color: rgb(177, 260, 230);">
-        <!--Second navbar containing categories of necklaces, bracelets, rings, brooches, earrings, combinations and sale-->
+        <!--Second navbar containing categories of necklaces, bracelets, rings, brooches, earrings, combinations, sale and all categories-->
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <h6 class="navbar-brand text-uppercase nav-item">Categories</h6>
@@ -189,7 +197,7 @@
       </div>
     </div>
   </header>
-
+<!--Toasts help to display messages that result from the users' actions-->
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
@@ -222,7 +230,7 @@
     </div>
     <!--Navbar for useful info such as contact details, delivery options, payment methods, Ts & Cs, returns & refunds, manufacture-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
-      <div class="container-fluid" style="background-color: rgb(163, 162, 162); color: black;">
+      <div class="container-fluid" style="background-color: rgb(177, 260, 230); color: black;">
         <h6 class="navbar-brand text-uppercase text-dark">Useful info</h6>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -242,7 +250,6 @@
       </div>
     </nav>
     <!--Payment methods-->
-
     <div class="row">
       <!--Payment methods (icons)-->
       <div class="col-3 d-flex justify-content-center">

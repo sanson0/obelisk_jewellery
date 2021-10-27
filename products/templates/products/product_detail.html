@@ -113,6 +113,7 @@
 
   {% block postloadjs %}
   {{ block.super }}
+  <!-- Rating stars JQuery takes the product rating number from the database and converts it into a five star visual representation-->
   <script>
     $.fn.stars = function () {
         return $(this).each(function () {

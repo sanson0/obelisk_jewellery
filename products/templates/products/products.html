@@ -17,6 +17,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-3">
+            <!-- Product count displayed-->
             <p class="text-muted mt-3 text-center text-md-left">
                 {% if search_term or current_categories or current_sorting != 'None_None' %}
                 <span class="small"><a href="{% url 'products' %}" class="text-dark">Products Home</a> | </span>
@@ -27,6 +28,7 @@
         </div>
         <div class="col-6"></div>
         <div class="col-3 mt-3">
+            <!-- Sort select bar, sort based on price, rating and name-->
             <div class="sort-select-wrapper w-25">
                 <select id="sort-selector"
                     class="custom-select custom-select-sm rounded-0 border border-dark border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -52,22 +54,22 @@
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
-
+                <!-- Each product has image/ information displayed in Bootstrap card form-->
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 mt-4">
                     <div class="card h-100 border-0 mb-1">
                         {% if product.image %}
-                        <div class="card-img-top d-flex justify-content-center">
+                        <div class="card-img-top">
                             <a href="{% url 'product_detail' product.id %}">
                                 <img src="{{ product.image.url }}" alt="{{ product.name }}"
-                                    style="height: 100px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                                    style="height: 100px; max-width: 200px; overflow: hidden; margin-left: 15px;">
                             </a>
                         </div>
                         {% else %}
-                        <div class="card-img-top d-flex justify-content-center">
+                        <div class="card-img-top">
                             <a href="{% url 'product_detail' product.id %}">
                                 <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"
-                                    style="height: 100px; max-width: 200px; overflow: hidden; margin-left: auto; margin-right: auto;">
+                                    style="height: 100px; max-width: 200px; overflow: hidden; margin-left: 15px;">
                             </a>
                         </div>
                         {% endif %}
@@ -94,6 +96,7 @@
                             <div class="row">
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                    <!-- Product rating converts into 5 star bar representation (with help from JavaScript below)-->
                                     {% if product.rating %}
                                     <span class="stars checked" data-rating="{{ product.rating }}"
                                         data-num-stars="5"></span>
@@ -101,6 +104,7 @@
                                     {% else %}
                                     <small class="text-muted">No Rating</small>
                                     {% endif %}
+                                    <!-- Superusers only can edit or delete any of the products-->
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
@@ -117,6 +121,7 @@
         </div>
     </div>
 </div>
+<!-- Scroll button, so shoppers can move back to the top of the product page easily-->
 <div class="btt-button shadow-sm rounded-0 border border-dark">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-dark mx-auto my-auto"></i>
@@ -126,13 +131,13 @@
 
 {% block postloadjs %}
 {{ block.super }}
-
+<!-- Scroll JQuery enables the scroll button so shoppers can move back to the top of the product page easily-->
 <script type="text/javascript">
     $('.btt-link').click(function (e) {
         window.scrollTo(0, 0)
     })
 </script>
-
+<!-- Sort JavaScript enables the sort bar to filter based on name, price and rating-->
 <script type="text/javascript">
     $('#sort-selector').change(function () {
         var selector = $(this);
@@ -155,6 +160,7 @@
         }
     })
 </script>
+<!-- Rating stars JQuery takes the product rating number from the database and converts it into a five star visual representation-->
 <script>
     $.fn.stars = function () {
         return $(this).each(function () {
