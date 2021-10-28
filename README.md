@@ -219,12 +219,15 @@ to be able to read data on the site (shoppers as well as superusers).
 ## Databases
 Django officially supports five database backends: PostgreSQL, MySQL, MariaDB, SQLite and Oracle.
 
-The type used in this project is PostGreSQL when deployed although, the database used during development is SQLite. Product data was transferred between the databases during the deployment process.
+The type used in this project is PostGreSQL when deployed, although the database used during development is SQLite. Product data was transferred between the databases during the deployment process, see the deployment section for details on how this was done.
 PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL runs on all major operating systems, has been ACID-compliant since 2001.
 
 In computer science, ACID (atomicity, consistency, isolation, durability) is a set of properties of database transactions intended to guarantee data validity despite errors, power failures, and other mishaps. In the context of databases, a sequence of database operations that satisfies the ACID properties (which can be perceived as a single logical operation on the data) is called a transaction.
 
 PostgreSQL comes with many features aimed to help developers build applications, administrators to protect data integrity and build fault-tolerant environments, and help manage data no matter how big or small the dataset. In addition to being free and open source, PostgreSQL is highly extensible. Data types can be defined, custom functions built out, even code written from different programming languages without recompiling the database.
+
+One of the most powerful parts of Django is the automatic admin interface. It reads metadata from models to provide a quick, model-centric interface where trusted users can manage content on the site. The admin’s recommended use is limited to an organization’s internal management tool. It’s not intended for building the entire front end around.
+To create a user to login with, the createsuperuser command was used. By default, logging in to the admin requires that the user has the is_staff attribute set to True.
 
 ## Site data
 ### Returns & Refunds
@@ -299,8 +302,8 @@ The project should be tested on different web browsers eg. Chrome, Avast, Micros
 Testing tools are listed:-
 * HTML code validator, see [results](docs/HTML_Validation.pdf)
 * CSS code validator, see [results](docs/CSS_Validation.pdf)
-* JShint
-* Lighthouse performance analysis (in Chrome browser)
+* JShint, see [results](docs/JShint.pdf)
+* Lighthouse performance analysis (in Chrome browser), see [results](docs/Lighthouse.pdf)
 # Bugs and improvements
 ## Problem: - toasts not working
 It was difficult to get toasts working in this project. All the Bootstrap components are from Bootstrap 5.1 and it is important to keep all components and links consistent.

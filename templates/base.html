@@ -291,13 +291,13 @@
   {% block postloadjs %}
   <script type="text/javascript">
     // code to initialise toasts for bs5 
-    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'));
     var toastList = toastElList.map(function (toastEl) {
-      return new bootstrap.Toast(toastEl)
-    })
+      return new bootstrap.Toast(toastEl);
+    });
 
     // code to show toasts for bs5
-    toastList.forEach(toast => toast.show())
+    toastList.forEach(toast => toast.show());
   </script>
   {% endblock %}
 </body>

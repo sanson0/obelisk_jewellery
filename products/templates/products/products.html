@@ -134,8 +134,8 @@
 <!-- Scroll JQuery enables the scroll button so shoppers can move back to the top of the product page easily-->
 <script type="text/javascript">
     $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0)
-    })
+        window.scrollTo(0, 0);
+    });
 </script>
 <!-- Sort JavaScript enables the sort bar to filter based on name, price and rating-->
 <script type="text/javascript">
@@ -158,7 +158,7 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 <!-- Rating stars JQuery takes the product rating number from the database and converts it into a five star visual representation-->
 <script>
@@ -171,7 +171,7 @@
             const noStar = '<i class="far fa-star"></i>'.repeat(Math.floor(numStars - rating));
             $(this).html(`${fullStar}${halfStar}${noStar}`);
         });
-    }
+    };
 </script>
 <script>
     $(function () {
