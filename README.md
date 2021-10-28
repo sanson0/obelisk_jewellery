@@ -292,7 +292,7 @@ The deployment process for this project is set out in this [link](docs/Deploymen
 ## Manual testing
 See [link](docs/Manual_testing.pdf) for explanation of manual testing.
 ## Responsiveness
-See link for results of responsiveness testing.
+See this [link](docs/Responsive_design.pdf) for results of responsiveness testing.
 ## Web browsers
 The project should be tested on different web browsers eg. Chrome, Avast, Microsoft Bing, Firefox
 ## Testing tools
