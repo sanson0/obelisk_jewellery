@@ -10,16 +10,19 @@
 {% endblock %}
 
 {% block content %}
-<h2 class="text-center text-md-left ml-3 pl-2 mt-5">Delivery Options</h2>
-<div class="ml-3 mr-3 pl-2 pr-2 pt-2 mb-5">
-    <p class="text-center text-md-left">
-        Free Standard Delivery on orders over £{{ free_delivery_threshold }}
-    </p>
-    <p>
-        Otherwise standard delivery is £1.99 and takes 5-7 working days
-    </p>
-    <p class="text-center text-md-left">
-        Express Delivery is £3.99 and your purchases arrive the next working day
-    </p>
+<div class="container">
+    <div class="row">
+        <div class="col col-10 offset-1">
+            <h2 class="mt-5">Delivery Options</h2>
+            <div class="mb-5">
+                <p>
+                    Free Standard Delivery on orders over £{{ free_delivery_threshold }}
+                </p>
+                <p>
+                    Otherwise standard delivery is charged at 10% and takes 5-7 working days
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
